@@ -31,7 +31,7 @@ export default function App() {
 
   return (
     <>
-    <StatusBar style="auto"/>
+      <StatusBar style="auto" />
       <View style={styles.appContainer}>
         <Button
           title="Add New Goal"
@@ -55,9 +55,9 @@ export default function App() {
                 />
               );
             }}
-            // keyExtractor={(item, index) => {
-            //   return item.id
-            // }}
+            keyExtractor={(item, index) => {
+              return item.id
+            }}
           />
         </View>
       </View>
